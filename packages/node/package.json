@@ -1,0 +1,24 @@
+{
+  "name": "@onedjs/node",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
+  "scripts": {
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "onedjs": "workspace:^0.0.0"
+  }
+}

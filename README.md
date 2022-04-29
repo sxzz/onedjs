@@ -10,6 +10,26 @@ A universal JavaScript API bridge for Node.js, Deno and browsers.
 npm i onedjs
 ```
 
+## Features
+
+- File System
+  - [x] read
+  - [x] write
+  - remove
+  - rename
+- OS
+  - arch
+  - platform
+- Process
+  - exit
+  - pid
+  - ppid
+  - cwd
+- Environment
+  - get
+  - set
+  - delete
+
 ## License
 
 [MIT](./LICENSE) License © 2022 [三咲智子](https://github.com/sxzz)
