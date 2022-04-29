@@ -2,6 +2,8 @@
 
 [![Unit Test](https://github.com/sxzz/onedjs/actions/workflows/unit-test.yml/badge.svg)](https://github.com/sxzz/onedjs/actions/workflows/unit-test.yml)
 
+A universal JavaScript API bridge for Node.js, Deno and browsers.
+
 ## Install
 
 ```bash

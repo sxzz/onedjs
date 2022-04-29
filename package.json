@@ -1,7 +1,7 @@
 {
   "name": "onedjs",
   "version": "0.0.0",
-  "description": "My awesome typescript library",
+  "description": "A universal JavaScript API bridge.",
   "license": "MIT",
   "files": [
     "dist"
