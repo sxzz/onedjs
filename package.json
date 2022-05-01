@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json,.md",
     "lint:fix": "pnpm run lint -- --fix",
     "test": "vitest",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag",
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "@sxzz/eslint-config-prettier": "^2.1.1",
     "@sxzz/eslint-config-ts": "^2.1.1",
     "@types/node": "*",
+    "bumpp": "^7.1.1",
     "eslint": "^8.14.0",
     "eslint-define-config": "^1.4.0",
     "esno": "^0.14.1",
@@ -25,5 +27,6 @@
   },
   "engines": {
     "node": ">=14.17.0"
-  }
+  },
+  "version": "0.0.1"
 }
