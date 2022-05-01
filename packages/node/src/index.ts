@@ -1,4 +1,4 @@
-import { createRuntime } from 'onedjs'
+import { createRuntime } from '@onedjs/core'
 import * as fs from './fs'
 
 export const nodeRuntime = createRuntime({

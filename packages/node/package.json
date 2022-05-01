@@ -1,10 +1,14 @@
 {
   "name": "@onedjs/node",
   "version": "0.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Node.js runtime for onedjs.",
+  "keywords": [
+    "onedjs",
+    "runtime",
+    "node"
+  ],
   "license": "MIT",
-  "author": "",
+  "author": "三咲智子 <sxzz@sxzz.moe>",
   "files": [
     "dist"
   ],
@@ -15,12 +19,15 @@
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
   },
   "dependencies": {
-    "onedjs": "workspace:^0.0.0"
+    "@onedjs/core": "workspace:^0.0.0"
   },
   "devDependencies": {
     "tsup": "^5.12.6"

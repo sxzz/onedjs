@@ -1,7 +1,7 @@
 {
-  "name": "onedjs",
+  "name": "@onedjs/core",
   "version": "0.0.0",
-  "description": "A universal JavaScript API bridge for Node.js, Deno and browsers.",
+  "description": "onedjs core",
   "keywords": [
     "onedjs",
     "node",
@@ -16,22 +16,17 @@
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
-  "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
-  },
-  "dependencies": {
-    "@onedjs/core": "workspace:^0.0.0",
-    "@onedjs/deno": "workspace:^0.0.0",
-    "@onedjs/node": "workspace:^0.0.0"
   },
   "devDependencies": {
     "tsup": "^5.12.6"

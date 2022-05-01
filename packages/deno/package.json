@@ -1,13 +1,11 @@
 {
-  "name": "onedjs",
+  "name": "@onedjs/deno",
   "version": "0.0.0",
-  "description": "A universal JavaScript API bridge for Node.js, Deno and browsers.",
+  "description": "Deno runtime for onedjs.",
   "keywords": [
     "onedjs",
-    "node",
-    "deno",
-    "browser",
-    "api"
+    "runtime",
+    "deno"
   ],
   "license": "MIT",
   "author": "三咲智子 <sxzz@sxzz.moe>",
@@ -16,11 +14,11 @@
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
-  "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -29,9 +27,7 @@
     "dev": "tsup --watch"
   },
   "dependencies": {
-    "@onedjs/core": "workspace:^0.0.0",
-    "@onedjs/deno": "workspace:^0.0.0",
-    "@onedjs/node": "workspace:^0.0.0"
+    "@onedjs/core": "workspace:^0.0.0"
   },
   "devDependencies": {
     "tsup": "^5.12.6"
