@@ -1,7 +1,6 @@
 import path from 'path'
 import { describe, expect, test } from 'vitest'
-import { createOned } from 'onedjs'
-import { nodeRuntime } from '@onedjs/node'
+import { createOned, nodeRuntime } from 'onedjs'
 
 describe('runtime on nodejs', () => {
   const api = createOned([nodeRuntime])

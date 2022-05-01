@@ -29,9 +29,9 @@
     "dev": "tsup --watch"
   },
   "dependencies": {
-    "@onedjs/core": "workspace:^0.0.0",
-    "@onedjs/deno": "workspace:^0.0.0",
-    "@onedjs/node": "workspace:^0.0.0"
+    "@onedjs/core": "workspace:*",
+    "@onedjs/deno": "workspace:*",
+    "@onedjs/node": "workspace:*"
   },
   "devDependencies": {
     "tsup": "^5.12.6"

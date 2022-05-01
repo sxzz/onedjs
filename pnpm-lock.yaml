@@ -4,7 +4,6 @@ importers:
 
   .:
     specifiers:
-      '@onedjs/core': workspace:^0.0.0
       '@sxzz/eslint-config-prettier': ^2.1.1
       '@sxzz/eslint-config-ts': ^2.1.1
       '@types/node': '*'
@@ -12,11 +11,11 @@ importers:
       eslint: ^8.14.0
       eslint-define-config: ^1.4.0
       esno: ^0.14.1
+      onedjs: workspace:*
       prettier: ^2.6.2
       typescript: ^4.6.4
       vitest: ^0.10.0
     devDependencies:
-      '@onedjs/core': link:packages/core
       '@sxzz/eslint-config-prettier': 2.1.1_eslint@8.14.0
       '@sxzz/eslint-config-ts': 2.1.1_t725usgvqspm5woeqpaxbfp2qu
       '@types/node': 17.0.30
@@ -24,6 +23,7 @@ importers:
       eslint: 8.14.0
       eslint-define-config: 1.4.0
       esno: 0.14.1
+      onedjs: link:packages/onedjs
       prettier: 2.6.2
       typescript: 4.6.4
       vitest: 0.10.0
@@ -36,7 +36,7 @@ importers:
 
   packages/deno:
     specifiers:
-      '@onedjs/core': workspace:^0.0.0
+      '@onedjs/core': workspace:*
       tsup: ^5.12.6
     dependencies:
       '@onedjs/core': link:../core
@@ -45,7 +45,7 @@ importers:
 
   packages/node:
     specifiers:
-      '@onedjs/core': workspace:^0.0.0
+      '@onedjs/core': workspace:*
       tsup: ^5.12.6
     dependencies:
       '@onedjs/core': link:../core
@@ -54,9 +54,9 @@ importers:
 
   packages/onedjs:
     specifiers:
-      '@onedjs/core': workspace:^0.0.0
-      '@onedjs/deno': workspace:^0.0.0
-      '@onedjs/node': workspace:^0.0.0
+      '@onedjs/core': workspace:*
+      '@onedjs/deno': workspace:*
+      '@onedjs/node': workspace:*
       tsup: ^5.12.6
     dependencies:
       '@onedjs/core': link:../core

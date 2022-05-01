@@ -1,5 +1,12 @@
-// waiting esbuild PR #2067
-const importFs = () => eval('import("fs/promises")')
+const importFs = async () => {
+  try {
+    // waiting esbuild PR #2067
+    return await eval('import("fs/promises")')
+  } catch {}
+
+  // Vitest
+  return import('fs/promises')
+}
 
 export function readFile(path: string | URL, encoding: string): Promise<string>
 export function readFile(
