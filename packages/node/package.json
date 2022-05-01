@@ -8,17 +8,21 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/index.cjs",
+    "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
   "scripts": {
-    "stub": "unbuild --stub"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "dependencies": {
     "onedjs": "workspace:^0.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^5.12.6"
   }
 }

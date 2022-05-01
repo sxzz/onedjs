@@ -4,7 +4,7 @@ export function createRuntime<T extends string = string>(runtime: Runtime<T>) {
   return runtime
 }
 
-export function createOned<R extends Runtime = Runtime>(runtimes: R[]) {
+export function createOned<R extends Runtime<any> = Runtime>(runtimes: R[]) {
   for (const runtime of runtimes) {
     if (runtime.isCurrent()) return runtime
   }
