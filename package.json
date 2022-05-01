@@ -1,4 +1,5 @@
 {
+  "version": "0.0.2",
   "private": true,
   "packageManager": "pnpm@7.0.0",
   "description": "A universal JavaScript API bridge.",
@@ -9,8 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json,.md",
     "lint:fix": "pnpm run lint -- --fix",
     "test": "vitest",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag",
-    "prepublishOnly": "pnpm run build"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm build && pnpm publish -r"
   },
   "devDependencies": {
     "@sxzz/eslint-config-prettier": "^2.1.1",
@@ -27,6 +27,5 @@
   },
   "engines": {
     "node": ">=14.17.0"
-  },
-  "version": "0.0.2"
+  }
 }
